@@ -1,0 +1,23 @@
+docker ps 容器
+docker-machine ls 虚拟机
+docker images 镜象
+docker pull ubuntu:16.04 下载镜象
+docker run -it --name nginx-ubuntu -p 80:80 ubuntu  运行镜象
+ctrl + p + q 退出容器
+docker attach nginx-ubuntu 重新连接容器
+apt-get update
+apt-get install vim 
+apt-get install nginx
+nginx 启动nginx
+whereis nginx 查看nginx安装路径
+dpkg -l nginx 查看nginx版本
+dpkg -L nginx 查看安装路径
+当你执行 nginx -t 
+得时候，nginx会去测试你得配置文件得语法，并告诉你配置文件是否写得正确，同时也告诉了你配置文件得路径：
+
+原因： 
+GitHub远程仓库中的README.md文件不在本地仓库中。 
+解决方案：
+
+$ git pull --rebase origin master
+$ git push -u origin master

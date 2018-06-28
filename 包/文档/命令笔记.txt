@@ -1,0 +1,63 @@
+新康嘉园47.96.150.254 root Xop*3&xo
+测试服务47.98.140.45 root 7CG%@PYa
+
+找药神器：     
+实际IP：120.27.241.158
+远程登录IP：47.96.19.189:9389
+账号：WDGtgdEP_administrator
+密码：Jsure@zysq
+
+后台地址：http://zhaoyao.medforce.cn/zysq/admin/admin_logout.Q
+用户名：drug
+密码：Jsure@123
+
+//定时任务
+0 2 * * * /usr/bin/curl http://47.98.140.45:3001/cde
+
+
+truncate table `vote_ipadress`;
+fs.unlinkSync(filePath);// 上传之后删除本地文件
+du -sh 查看当前文件夹大小
+du -sk filename 查看指定文件大小
+
+ls -l | grep "^-" | wc -l 查看当前目录下文件的个数
+CPU占用率查看命令：top
+内存占用率：free -m
+查看带宽：iftop
+
+
+远程好卡--在自己的计算机上以管理员权限打开命令提示符窗口，输入netsh interface tcp set global autotuninglevel=disabled（或者highlyrestricted）
+
+telnet 120.27.241.158 3306 查看端口是否有用
+mysql -h 120.27.241.158 -u root -p
+
+2.启动Jenkins服务
+　　service jenkins start  （注：如果Jenkins曾经启动过，启动服务不需要进入到某个目录）
+3.停止Jenkins服务
+　　service jenkins stop
+
+whereis git 查看git安装位置
+
+service redis stop  关闭redis
+
+ps -aux | sort -k4nr | head -10 前10内存的进程
+
+echo 1 > /proc/sys/vm/drop_caches 命令清理内存
+
+Linux centos关机与重启命令详解与实战
+　Linux centos重启命令：
+　　1、reboot   普通重启
+　　2、shutdown -r now 立刻重启(root用户使用)
+　　3、shutdown -r 10 过10分钟自动重启(root用户使用)
+　　4、shutdown -r 20:35 在时间为20:35时候重启(root用户使用)
+　　如果是通过shutdown命令设置重启的话，可以用shutdown -c命令取消重启
+　Linux centos关机命令：
+　　1、halt 立刻关机
+　　2、poweroff 立刻关机
+　　3、shutdown -h now 立刻关机(root用户使用)
+　　4、shutdown -h 10 10分钟后自动关机
+　　如果是通过shutdown命令设置关机的话，可以用shutdown -c命令取消重启
+
+rabbitmq-plugins.bat enable rabbitmq_management 安装监控插件
+rabbitmq-server.bat windows启动mq
+localhost:15672 默认账号：guest 密码：guest 
